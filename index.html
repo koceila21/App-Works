@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WorksUrgent</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+  <!-- Leaflet (carte) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<header>🚀 WorksUrgent</header>
+
+<div class="container">
+
+  <div class="sidebar">
+    <button onclick="showLogin()">🔐 Login</button>
+    <button onclick="loadJobs()">💼 Jobs</button>
+    <button onclick="loadExternal()">🌐 Jobs externes</button>
+    <button onclick="getNearbyUrgentJobs()">⚡ Urgents proches</button>
+    <button onclick="showMap()">🗺️ Carte</button>
+    <button onclick="loadProfiles()">👤 Candidats</button>
+    <button onclick="showChat()">💬 Chat</button>
+  </div>
+
+  <div class="content" id="content">
+    <h2>Bienvenue sur WorksUrgent</h2>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
